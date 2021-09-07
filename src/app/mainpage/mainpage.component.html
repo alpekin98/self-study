@@ -1,0 +1,101 @@
+<div [ngStyle]="{ textAlign: 'center', margin: '50px' }">
+  <h1>Kulak Stations</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <form #addForm="ngForm" (ngSubmit)="addStation(addForm)">
+      <label class="form-label">Station Name</label>
+      <input
+        name="stationName"
+        ngModel
+        #stationName="ngModel"
+        class="form-control"
+        required
+      />
+      <div class="mb-3">
+        <label class="form-label">Station Location</label>
+        <select
+          class="form-control"
+          #stationLocation="ngModel"
+          ngModel
+          name="stationLocation"
+          required
+        >
+          <option *ngFor="let city of cityList">{{ city }}</option>
+        </select>
+      </div>
+      <div class="mb-3 form-check">
+        <label class="form-check-label">Station Status</label>
+        <input
+          type="checkbox"
+          class="form-check-input"
+          ngModel
+          #stationStatus="ngModel"
+          name="stationStatus"
+        />
+      </div>
+      <button
+        class="btn btn-primary"
+        id="addButton"
+        name="addButton"
+        [disabled]="!addForm.valid"
+      >
+        Add
+      </button>
+    </form>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<br />
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <table
+      class="table table-striped"
+      [ngStyle]="{ border: '1px solid black' }"
+    >
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Station Name</th>
+          <th scope="col">Station Location</th>
+          <th scope="col">Station Status</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let station of stationList; let index = index">
+          <td>{{ index + 1 }}</td>
+          <td>{{ station.stationName }}</td>
+          <td>{{ station.stationLocation }}</td>
+          <td>
+            <button
+              [ngClass]="{
+                btn: true,
+                'btn-success': station.stationStatus,
+                'btn-danger': !station.stationStatus
+              }"
+              [ngStyle]="{
+                width: '100%'
+              }"
+            ></button>
+          </td>
+          <td>
+            <button
+              id="deleteButton"
+              name="deleteButton"
+              class="btn btn-danger"
+              (click)="deleteStation(index)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-3"></div>
+</div>

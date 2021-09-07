@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1631049919099' stop='1631049921097'>
+    <name>Kulak Project Mainpage Test</name>
+    <title>Kulak Project Mainpage Test</title>
+    <test-cases>
+        <test-case start='1631049919099' status='passed' stop='1631049920237'>
+            <name>List length after add</name>
+            <title>List length after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631049920237' status='failed' stop='1631049921096'>
+            <name>List length after add</name>
+            <title>List length after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected 2 to be 1.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (C:\Users\Arinc\Desktop\ulak_proje\ulak-projet\tests\test.js:23:19)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

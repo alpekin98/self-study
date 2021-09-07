@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1631051941347' stop='1631051941587'>
+    <name>Kulak Project Mainpage Test</name>
+    <title>Kulak Project Mainpage Test</title>
+    <test-cases>
+        <test-case start='1631051941348' status='passed' stop='1631051941374'>
+            <name>List length after add</name>
+            <title>List length after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631051941374' status='failed' stop='1631051941584'>
+            <name>Check data after add</name>
+            <title>Check data after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: Error while waiting for Protractor to sync with the page: "both angularJS testability and angular testability are undefined.  This could be either because this is a non-angular page or because your test involves client-side navigation, which can interfere with Protractor's bootstrapping.  See http://git.io/v4gXM for details"</message>
+                <stack-trace>Error: Error while waiting for Protractor to sync with the page: "both angularJS testability and angular testability are undefined.  This could be either because this is a non-angular page or because your test involves client-side navigation, which can interfere with Protractor's bootstrapping.  See http://git.io/v4gXM for details"
+                    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\built\browser.js:461:23
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)Error
+                    at ElementArrayFinder.applyAction_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+                    at ElementArrayFinder.&lt;computed> [as getText] (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+                    at ElementFinder.&lt;computed> [as getText] (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+                    at UserContext.&lt;anonymous> (C:\Users\Arinc\Desktop\ulak_proje\ulak-projet\tests\test.js:25:49)
+                    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+                    at new Promise (&lt;anonymous>)
+                    at SimpleScheduler.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+                    at schedulerExecute (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+                    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2232:22
+                    at new Promise (&lt;anonymous>)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (C:\Users\Arinc\Desktop\ulak_proje\ulak-projet\tests\test.js:14:3)
+                    at addSpecsToSuite (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\Arinc\Desktop\ulak_proje\ulak-projet\tests\test.js:3:1)
+                    at Module._compile (internal/modules/cjs/loader.js:1072:14)
+                    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+                    at Module.load (internal/modules/cjs/loader.js:937:32)
+                    at Function.Module._load (internal/modules/cjs/loader.js:778:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

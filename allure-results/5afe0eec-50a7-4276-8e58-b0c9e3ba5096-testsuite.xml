@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1631051442295' stop='1631051444273'>
+    <name>Kulak Project Mainpage Test</name>
+    <title>Kulak Project Mainpage Test</title>
+    <test-cases>
+        <test-case start='1631051442296' status='passed' stop='1631051443298'>
+            <name>List length after add</name>
+            <title>List length after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631051443298' status='failed' stop='1631051444272'>
+            <name>Check data</name>
+            <title>Check data</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: stationData.get(...).element(...).getAttribute(...).toEqual is not a function</message>
+                <stack-trace>TypeError: stationData.get(...).element(...).getAttribute(...).toEqual is not a function
+                    at UserContext.&lt;anonymous> (C:\Users\Arinc\Desktop\ulak_proje\ulak-projet\tests\test.js:30:8)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                From: Task: Run it("Check data") in control flow
+                    at UserContext.&lt;anonymous> (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                    at Spec.execute (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+                    at UserContext.fn (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+                    at attempt (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (C:\Users\Arinc\Desktop\ulak_proje\ulak-projet\tests\test.js:14:3)
+                    at addSpecsToSuite (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\Arinc\Desktop\ulak_proje\ulak-projet\tests\test.js:3:1)
+                    at Module._compile (internal/modules/cjs/loader.js:1072:14)
+                    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+                    at Module.load (internal/modules/cjs/loader.js:937:32)
+                    at Function.Module._load (internal/modules/cjs/loader.js:778:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

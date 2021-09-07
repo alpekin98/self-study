@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1631050183396' stop='1631050185393'>
+    <name>Kulak Project Mainpage Test</name>
+    <title>Kulak Project Mainpage Test</title>
+    <test-cases>
+        <test-case start='1631050183397' status='passed' stop='1631050184512'>
+            <name>List length after add</name>
+            <title>List length after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631050184512' status='passed' stop='1631050185392'>
+            <name>List length after add</name>
+            <title>List length after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

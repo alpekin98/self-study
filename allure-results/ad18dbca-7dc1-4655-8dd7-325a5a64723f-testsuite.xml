@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1631052070282' stop='1631052070334'>
+    <name>Kulak Project Mainpage Test</name>
+    <title>Kulak Project Mainpage Test</title>
+    <test-cases>
+        <test-case start='1631052070282' status='passed' stop='1631052070299'>
+            <name>List length after add</name>
+            <title>List length after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631052070299' status='failed' stop='1631052070324'>
+            <name>Check data after add</name>
+            <title>Check data after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected false to be true.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (C:\Users\Arinc\Desktop\ulak_proje\ulak-projet\tests\test.js:32:27)
+                    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+                    at new Promise (&lt;anonymous>)
+                    at SimpleScheduler.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+                    at schedulerExecute (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+                    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2232:22
+                    at new Promise (&lt;anonymous>)
+                    at SimpleScheduler.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2242:12)
+                    at SimpleScheduler.execute (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2227:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

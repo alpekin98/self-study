@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="2" time="2.044">
+ <testsuite name="Kulak Project Mainpage Test" timestamp="2021-09-08T01:05:34" hostname="localhost" time="2.044" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="Kulak Project Mainpage Test" name="List length after add" time="1.065" />
+  <testcase classname="Kulak Project Mainpage Test" name="Check data after add" time="0.972" />
+ </testsuite>
+</testsuites>
