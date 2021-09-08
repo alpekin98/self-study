@@ -45,7 +45,7 @@ exports.config = {
     jasmine.getEnv().addReporter(
       new jasmineReporters.JUnitXmlReporter({
         consolidateAll: true,
-        savePath: "./",
+        savePath: "./other-reports",
         filePrefix: "xmlresults",
       })
     );
@@ -93,7 +93,7 @@ exports.config = {
 
       testConfig = {
         reportTitle: "Protractor Test Execution Report",
-        outputPath: "./",
+        outputPath: "./other-reports",
         outputFilename: "ProtractorTestReport",
         screenshotPath: "./screenshots",
         testBrowser: browserName,
@@ -102,7 +102,7 @@ exports.config = {
         screenshotsOnlyOnFailure: true,
         testPlatform: platform,
       };
-      new HTMLReport().from("xmlresults.xml", testConfig);
+      new HTMLReport().from("./other-reports/xmlresults.xml", testConfig);
     });
   },
 };

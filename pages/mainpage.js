@@ -14,20 +14,29 @@ let mainpage = function () {
     stationNameInput.sendKeys(name);
   };
 
-  this.setLocation = (index) => {
-    stationLocationSelect.then(function (options) {
-      options[index].click();
-    });
+  this.setLocation = async (city) => {
+    let length = await stationLocationSelect.count();
+    let optionList = await stationLocationSelect;
+    let optionValid = false;
+    for (let i = 0; i < length; i++) {
+      if ((await optionList[i].getAttribute("value")) == city) {
+        optionList[i].click();
+        optionValid = true;
+      }
+    }
+    expect(optionValid).toBe(true);
   };
 
-  this.setStatus = (status) => {
-    if (status) {
-      stationStatusCheckbox.click();
-    }
+  this.setStatus = () => {
+    stationStatusCheckbox.click();
   };
 
   this.clickAddButton = () => {
     addButton.click();
+  };
+
+  this.getAddButton = () => {
+    return addButton;
   };
 
   this.getStationCount = async () => {
@@ -39,8 +48,8 @@ let mainpage = function () {
     return stationTableRows.get(index).all(by.css("td"));
   };
 
-  this.clickDeleteButton = () => {
-    deleteButton.click();
+  this.clickDeleteButton = async (index) => {
+    await deleteButton.get(index).click();
   };
 };
 

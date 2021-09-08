@@ -1,4 +1,5 @@
 <div [ngStyle]="{ textAlign: 'center', margin: '50px' }">
+  <img src="../../assets/ulak.png" width="25%" />
   <h1>Kulak Stations</h1>
 </div>
 
@@ -23,7 +24,9 @@
           name="stationLocation"
           required
         >
-          <option *ngFor="let city of cityList">{{ city }}</option>
+          <option *ngFor="let city of cityList" [value]="city">
+            {{ city }}
+          </option>
         </select>
       </div>
       <div class="mb-3 form-check">

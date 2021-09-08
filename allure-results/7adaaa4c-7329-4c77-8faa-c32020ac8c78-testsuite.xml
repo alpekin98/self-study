@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1631126326065' stop='1631126332814'>
+    <name>Kulak Project Mainpage Test</name>
+    <title>Kulak Project Mainpage Test</title>
+    <test-cases>
+        <test-case start='1631126326066' status='passed' stop='1631126327144'>
+            <name>List length after add</name>
+            <title>List length after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631126327144' status='passed' stop='1631126328413'>
+            <name>Check data after add</name>
+            <title>Check data after add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631126328413' status='passed' stop='1631126331279'>
+            <name>Checks station quantity</name>
+            <title>Checks station quantity</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631126331279' status='passed' stop='1631126332084'>
+            <name>Checks if form button enabled</name>
+            <title>Checks if form button enabled</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1631126332084' status='passed' stop='1631126332813'>
+            <name>Checks if form button disabled</name>
+            <title>Checks if form button disabled</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

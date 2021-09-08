@@ -1,5 +1,11 @@
-<ul style="list-style-type:none"><h4>Kulak Project Mainpage Test (6 s)</h4><li id="a0f063f0-10d5-11ec-82f3-834094c296a4" class="passed" data-spec="spec0" data-name="List length after add" data-browser="chrome"><span class="passed">&#10003;</span><a href="1e06c4a806139a9d5a037f18fe7ad512.png">List length after add</a>(1 s)</li><li id="a0f08b00-10d5-11ec-82f3-834094c296a4" class="passed" data-spec="spec1" data-name="Check data after add" data-browser="chrome"><span class="passed">&#10003;</span><a href="67f20cc7db521f6da15563712479b7f4.png">Check data after add</a>(0.96 s)</li><li id="a0f08b01-10d5-11ec-82f3-834094c296a4" class="failed" data-spec="spec2" data-name="Checks station quantity" data-browser="chrome"><span class="failed">&#10007;</span><a href="01da61f459e8828b3c3846e8a2baa23b.png">Checks station quantity</a>(3 s)<ul><li>Expected 9 to be -11. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.630')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.630" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="10" tests="5" time="6.245">
+ <testsuite name="Kulak Project Mainpage Test" timestamp="2021-09-08T21:50:19" hostname="localhost" time="6.245" errors="0" tests="5" skipped="0" disabled="0" failures="10">
+  <testcase classname="Kulak Project Mainpage Test" name="List length after add" time="1.066" />
+  <testcase classname="Kulak Project Mainpage Test" name="Check data after add" time="0.96" />
+  <testcase classname="Kulak Project Mainpage Test" name="Checks station quantity" time="2.668">
+   <failure type="toBe" message="Expected 9 to be -11."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -7,8 +13,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 8 to be -12. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.631')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.631" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 8 to be -12."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -16,8 +24,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 7 to be -13. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.632')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.632" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 7 to be -13."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -25,8 +35,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 6 to be -14. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.633')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.633" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 6 to be -14."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -34,8 +46,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 5 to be -15. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.634')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.634" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 5 to be -15."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -43,8 +57,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 4 to be -16. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.635')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.635" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 4 to be -16."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -52,8 +68,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 3 to be -17. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.636')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.636" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 3 to be -17."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -61,8 +79,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 2 to be -18. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.637')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.637" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 2 to be -18."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -70,8 +90,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 1 to be -19. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.638')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.638" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 1 to be -19."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -79,8 +101,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li><li>Expected 0 to be -20. [<a href="javascript:showhide('spec2-Windows-chrome-93.0.4577.639')">stack</a>]<br/><span style="display: none" id="spec2-Windows-chrome-93.0.4577.639" class="stacktrace">Error: Failed expectation
-    at UserContext.&lt;anonymous&gt; (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+   <failure type="toBe" message="Expected 0 to be -20."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Arinc\Desktop\ulak-home-study\tests\test.js:56:42)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
     at new ManagedPromise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
     at ControlFlow.promise (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
@@ -88,4 +112,10 @@
     at TaskQueue.execute_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
     at TaskQueue.executeNext_ (C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
     at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7</span></li></ul></li><li id="a0f08b02-10d5-11ec-82f3-834094c296a4" class="passed" data-spec="spec3" data-name="Checks if form button enabled" data-browser="chrome"><span class="passed">&#10003;</span><a href="a5bf04c24083cc1a89501991448ae34b.png">Checks if form button enabled</a>(0.894 s)</li><li id="a0f08b03-10d5-11ec-82f3-834094c296a4" class="passed" data-spec="spec4" data-name="Checks if form button disabled" data-browser="chrome"><span class="passed">&#10003;</span><a href="feb47489baf9989be805f0b508836df0.png">Checks if form button disabled</a>(0.65 s)</li></ul><a href="javascript:showhide('a0f08b04-10d5-11ec-82f3-834094c296a4')">Toggle Configuration</a><div class="config" id="a0f08b04-10d5-11ec-82f3-834094c296a4" style="display: none"><h4>Configuration</h4><li>Jasmine version:  2.8.0</li><li>Browser name:  chrome</li><li>Browser version:  93.0.4577.63</li><li>Platform:  Windows</li><li>Javascript enabled:  true</li><li>Css selectors enabled:  true</li></div></body></html>
+    at C:\Users\Arinc\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="Kulak Project Mainpage Test" name="Checks if form button enabled" time="0.894" />
+  <testcase classname="Kulak Project Mainpage Test" name="Checks if form button disabled" time="0.65" />
+ </testsuite>
+</testsuites>
