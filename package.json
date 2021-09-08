@@ -1,5 +1,5 @@
 {
-  "name": "ulak-projet",
+  "name": "self-study",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,16 +18,17 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@popperjs/core": "^2.10.1",
+    "allure-commandline": "^2.13.8",
     "bootstrap": "^5.1.0",
+    "jasmine-allure-reporter": "^1.0.2",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
+    "protractor-html-reporter-2": "^1.0.4",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4",
-    "allure-commandline": "^2.13.8",
-    "jasmine-allure-reporter": "^1.0.2",
-    "protractor-html-reporter-2": "^1.0.4",
-    "protractor-jasmine2-screenshot-reporter": "^0.5.0"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.4",
