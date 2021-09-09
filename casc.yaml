@@ -34,9 +34,10 @@ tool:
                 npmPackagesRefreshHours: 72
     installations:
       - name: "nodejs"
+        home: ""
         properties:
           - installSource:
               installers:
                 - nodeJSInstaller:
-                  id: "16.9.0"
-                  npmPackagesRefreshHours: 72
+                    id: "16.9.0"
+                    npmPackagesRefreshHours: 72
