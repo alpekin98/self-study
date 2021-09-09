@@ -21,3 +21,5 @@ ws-cleanup:latest
 allure-jenkins-plugin:latest
 job-dsl:latest
 nodejs:latest
+docker-plugin:latest
+docker-workflow:latest

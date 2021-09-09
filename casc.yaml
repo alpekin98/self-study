@@ -25,3 +25,18 @@ jobs:
           }
         }
       }
+tool:
+  nodejs:
+    defaultProperties:
+      - installSource:
+          installers:
+            - nodeJSInstaller:
+                npmPackagesRefreshHours: 72
+    installations:
+      - name: "nodejs-16.9.0"
+        properties:
+          - installSource:
+              installers:
+                - nodeJSInstaller:
+                  id: "16.9.0"
+                  npmPackagesRefreshHours: 72
