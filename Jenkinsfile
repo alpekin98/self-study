@@ -3,7 +3,11 @@ pipeline {
   tools {nodejs "nodejs"}
   stages {
     stage('Install') {
-      steps { sh 'npm install' }
+      steps { 
+        sh 'npm install'
+        sh 'npm i -g @angular/cli'
+        sh 'npm i -g @protractor'
+      }
     }
     stage('Test') {
       parallel {
