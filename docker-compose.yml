@@ -2,14 +2,14 @@ services:
   web:
     image: node_test
     build:
-      context: ./docker
+      context: .
       dockerfile: Dockerfile-node
     ports:
       - 8081:80
   jenkins:
     image: jenkins_image
     build:
-      context: ./docker
+      context: .
       dockerfile: Dockerfile-jenkins
     privileged: true
     user: root
