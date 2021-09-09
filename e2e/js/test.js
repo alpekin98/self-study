@@ -1,4 +1,4 @@
-let homepage = require("../pages/mainpage");
+let homepage = require("./mainpage");
 
 describe("Kulak Project Mainpage Test", () => {
   var localUrl = "http://localhost:4200/";
