@@ -8,3 +8,41 @@ jenkins:
 unclassified:
   location:
     url: http://localhost:8080/
+jobs:
+  - script: >
+      pipelineJob('self-study') {
+        definition {
+          cpsScm {
+            scm {
+              git {
+                remote {
+                  url('https://github.com/alpekin98/self-study.git')
+                }
+                branch('*/main')
+              }
+            }
+            lightweight()
+            script("""\
+              pipeline {
+                agent any
+                stages {
+                    stage('Build') {
+                        steps {
+                            echo 'Building'
+                        }
+                    }
+                    stage('Deploy') {
+                        steps {
+                            echo 'Deploying'
+                        }
+                    }
+                    stage('Test') {
+                        steps {
+                            echo 'Testing'
+                        }
+                    }
+                }
+            }""".stripIndent())
+          }
+        }
+      }
