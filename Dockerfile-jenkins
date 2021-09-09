@@ -2,6 +2,9 @@
 FROM jenkins/jenkins:lts
 
 # Skip Setup Wizard
+RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+USER docker
+
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 ENV CASC_JENKINS_CONFIG /var/jenkins_home/casc.yaml
 RUN dpkg -i google-chrome-stable_current_amd64.deb
