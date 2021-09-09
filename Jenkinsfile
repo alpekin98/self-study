@@ -4,7 +4,6 @@ pipeline {
   stages {
     stage('Install') {
       steps { 
-        sh 'apt-get install chromium'
         sh 'npm install'
         sh 'npm i -g @angular/cli'
         sh 'npm i -g protractor'
