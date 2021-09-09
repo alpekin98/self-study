@@ -5,6 +5,7 @@ pipeline {
     stage('Install') {
       steps { 
         sh 'npm install'
+        sh 'npm i -g chromedriver'
         sh 'npm i -g @angular/cli'
         sh 'npm i -g protractor'
       }
