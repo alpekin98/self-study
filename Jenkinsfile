@@ -4,6 +4,7 @@ pipeline {
   stages {
     stage('Install') {
       steps { 
+        sh 'apt-get install -y google-chrome-stable xvfb'
         sh 'npm install'
         sh 'npm i -g @angular/cli'
         sh 'npm i -g protractor'
