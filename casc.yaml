@@ -33,7 +33,7 @@ tool:
             - nodeJSInstaller:
                 npmPackagesRefreshHours: 72
     installations:
-      - name: "nodejs-16.9.0"
+      - name: "nodejs"
         properties:
           - installSource:
               installers:
