@@ -1,0 +1,5 @@
+# Get Jenkins image
+FROM jenkins/jenkins:lts
+
+# Skip Setup Wizard
+ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
