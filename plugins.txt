@@ -20,3 +20,4 @@ workflow-aggregator:latest
 ws-cleanup:latest
 allure-jenkins-plugin:latest
 job-dsl:latest
+nodejs:latest
