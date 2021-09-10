@@ -5,7 +5,7 @@ pipeline {
     stage('Install') {
       steps { 
         // sh 'dpkg -i google-chrome-stable_current_amd64.deb'
-        // sh 'rm rm google-chrome-stable_current_amd64.deb'
+        // sh 'rm google-chrome-stable_current_amd64.deb'
         sh 'npm install'
         sh 'npm i -g chromedriver'
         sh 'npm i -g @angular/cli'
