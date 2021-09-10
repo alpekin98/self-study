@@ -1,8 +1,54 @@
 # Self Study
 
-## Preview Allure Reports
+## Gerekli Teknolojiler
 
-In the commandline:
-allure serve "location of the allure-results folder"
-For example
-allure serve allure-results
+Docker
+Docker-compose
+
+## Komutlar
+
+Terminali açın ve istediğiniz bir dizine gidin.
+
+```
+git clone https://github.com/alpekin98/self-study.git
+cd self-study
+docker-compose.yml
+```
+
+Docker-compose bütün gerekli ayarlamaları yapıcaktır.
+Bu ayarlar:
+Node konteynırı kurulumu (Dockerfile-node)
+Node konteynırına uygulamanın kurulumu
+Nginx konteynırı kurulumu ve uygulamanın nginx ile ayakta tutulması
+Jenkins konteynırı kurulumu (Dockerfile-jenkins)
+Jenkins pluginleri, ENV değişkenleri ayarlanması
+Jenkinsin ayağa kaldırılması
+
+Tüm işlemler bittikten sonra
+http://localhost:8081 adresinde uygulama
+http://localhost:8082 adresinde jenkins çalışır durumda olucaktır
+
+jenkinse girdikten sonra Job hazır gelmektedir (CasC plugini sayesinde)
+Build now diyerek pipeline'ı build edebilirsiniz.
+
+## Diğer komutlar
+
+Uygulamayı tek başına kurup manuel deneyebilirsiniz.
+
+```
+ng serve
+```
+
+ile uygulamayı ayağa kaldırın
+
+```
+ng test
+```
+
+ile unit test yapabilirsiniz.
+
+```
+ng e2e
+```
+
+ile functional test yapabilirsiniz.
