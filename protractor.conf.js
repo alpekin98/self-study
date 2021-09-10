@@ -19,6 +19,7 @@ exports.config = {
         "--disable-dev-shm-usage",
         "--remote-debugging-port=9222",
         "--headless",
+        "--window-size=1920,1080",
       ],
     },
   },
