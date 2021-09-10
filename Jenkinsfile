@@ -26,7 +26,7 @@ pipeline {
         sh 'protractor --version'
         sh 'chromedriver --version'
         sh 'google-chrome --version'
-        sh 'webdriver-manager start --detach --seleniumPort=80 &'
+        sh 'webdriver-manager start --detach --seleniumPort=8083 &'
         sh 'ln -s /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs/lib/node_modules/chromedriver /usr/bin/chromedriver'
       }
     }
