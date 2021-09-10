@@ -34,14 +34,29 @@ pipeline {
     stage('Unit tests') {
       steps { sh 'ng test self-study --watch=false' }
     }
-    stage('e2e tests') {
-      steps { sh 'ng e2e' }
-    }
+    // stage('e2e tests') {
+    //   steps { sh 'ng e2e' }
+    // }
     stage('Build') {
       steps { sh 'npm run build' }
     }
-    stage('Show report'){
-      steps { sh 'allure serve allure-results'}
+    stage('reports') {
+      steps {
+        script {
+          allure([
+            includeProperties: false,
+            jdk: '',
+            properties: [],
+            reportBuildPolicy: 'ALWAYS',
+            results: [[path: 'allure-results']]
+          ])
+        }
+      }
     }
   }
+  // post {
+  //   always {
+  //     allure includeProperties: false, jdk: '', results: [[path: '/allure-results']]
+  //   }
+  // }
 }
