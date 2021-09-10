@@ -31,22 +31,20 @@ pipeline {
       }
     }
     stage('Test') {
-      // parallel {
-      //   stage('Static code analysis') {
-      //     steps { sh 'ng e2e' }
-      //   }
-      //   stage('Unit tests') {
-      //     steps { sh 'ng test' }
-      //   }
-      // }
-      steps { 
-        sh 'ng test self-study --watch=false' 
-        sh 'protractor protractor.conf.js' 
+      parallel {
+        stage('Static code analysis') {
+          steps { sh 'protractor protractor.conf.js' }
+        }
+        stage('Unit tests') {
+          steps { sh 'ng test self-study --watch=false' }
+        }
       }
-
     }
     stage('Build') {
       steps { sh 'npm run build' }
+    }
+    stage('Show report'){
+      steps { sh 'allure serve allure-results'}
     }
   }
 }
