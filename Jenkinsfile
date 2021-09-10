@@ -8,6 +8,8 @@ pipeline {
         sh 'npm i -g chromedriver'
         sh 'npm i -g @angular/cli'
         sh 'npm i -g protractor'
+        sh "echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' >>   /etc/apt/sources.list"
+        sh 'sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 78BD65473CB3BD13'
         sh 'apt-get update'
         sh 'apt-get install libxpm4 libxrender1 libgtk2.0-0 libnss3 libgconf-2-4'
         sh 'apt-get install google-chrome-stable'
