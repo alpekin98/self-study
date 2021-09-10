@@ -40,8 +40,8 @@ pipeline {
       //   }
       // }
       steps { 
-        sh 'ng e2e' 
         sh 'ng test' 
+        sh 'ng e2e' 
       }
 
     }
