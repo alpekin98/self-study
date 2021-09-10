@@ -2,6 +2,7 @@ pipeline {
   agent any
   tools {nodejs "nodejs"}
   stages {
+
     stage('Install') {
       steps { 
         sh 'npm install'
@@ -30,15 +31,23 @@ pipeline {
         sh 'webdriver-manager start --detach --seleniumPort=8083 &'
       }
     }
+
     stage('Unit tests') {
       steps { sh 'ng test self-study --watch=false' }
     }
-    // stage('e2e tests') {
-    //   steps { sh 'ng e2e' }
-    // }
+    
+    try{
+      stage('e2e tests') {
+        steps { sh 'ng e2e' }
+      }
+    } catch (error) {
+      echo 'Error occured at e2e testing: ' + error.getMessage()
+    }
+    
     stage('Build') {
       steps { sh 'npm run build' }
     }
+
     stage('reports') {
       steps {
         script {
@@ -52,5 +61,6 @@ pipeline {
         }
       }
     }
+
   }
 }
