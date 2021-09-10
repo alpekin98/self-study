@@ -41,7 +41,7 @@ pipeline {
       // }
       steps { 
         sh 'ng test self-study --watch=false' 
-        sh 'ng e2e' 
+        sh 'protractor protractor.conf.js' 
       }
 
     }
