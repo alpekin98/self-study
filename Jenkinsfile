@@ -16,26 +16,34 @@ pipeline {
         sh 'apt-get -y install xvfb gtk2-engines-pixbuf'
         sh 'apt-get -y install xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable'
         sh 'apt-get -y install imagemagick x11-apps'
+        sh 'Xvfb -ac :99 -screen 0 1280x1024x16 &'
+        sh 'export DISPLAY=:99'
+        sh 'webdriver-manager version'
         sh 'webdriver-manager update'
-        sh 'ln -s /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs/lib/node_modules/chromedriver /usr/bin/chromedriver'
+        sh 'webdriver-manager version'
         sh 'npm -version'
         sh 'node --version'
         sh 'protractor --version'
         sh 'chromedriver --version'
         sh 'google-chrome --version'
-        sh 'webdriver-manager --version'
-        
+        sh 'webdriver-manager start --detach --seleniumPort=80 &'
+        sh 'ln -s /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs/lib/node_modules/chromedriver /usr/bin/chromedriver'
       }
     }
     stage('Test') {
-      parallel {
-        stage('Static code analysis') {
-          steps { sh 'ng e2e' }
-        }
-        stage('Unit tests') {
-          steps { sh 'ng test' }
-        }
+      // parallel {
+      //   stage('Static code analysis') {
+      //     steps { sh 'ng e2e' }
+      //   }
+      //   stage('Unit tests') {
+      //     steps { sh 'ng test' }
+      //   }
+      // }
+      steps { 
+        sh 'ng e2e' 
+        sh 'ng test' 
       }
+
     }
     stage('Build') {
       steps { sh 'npm run build' }
