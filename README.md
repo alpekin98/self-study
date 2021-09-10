@@ -29,6 +29,14 @@ http://localhost:8081 adresinde uygulama
 http://localhost:8082 adresinde jenkins çalışır durumda olucaktır
 
 jenkinse girdikten sonra Job hazır gelmektedir (CasC plugini sayesinde)
+
+Ancak allure reports plugini için manuel ayar yapılması gerekiyor.
+http://localhost:8082/configureTools/ adresine gidin.
+En aşağı kaydırın ve Add Allure Commandline butonuna tıklayın.
+Name kısmına dilediğiniz bir isim girin.
+Aşağıdaki version kısmından en son versiyonu seçin ve Apply, ardından Save butonuna tıklayıp kaydedin.
+
+Dashboard'a gidin ve self-study jobuna girin.
 Build now diyerek pipeline'ı build edebilirsiniz.
 
 ## Diğer komutlar
