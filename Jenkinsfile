@@ -37,11 +37,13 @@ pipeline {
     }
     
     stage('e2e tests') {
-      script {
-        try{
-          steps { sh 'ng e2e' }
-        } catch (error) {
-          echo 'Error occured at e2e testing: ' + error.getMessage()
+      steps {
+        script {
+          try{
+            sh 'ng e2e' 
+          } catch (error) {
+            echo 'Error occured at e2e testing: ' + error.getMessage()
+          }
         }
       }
     }
