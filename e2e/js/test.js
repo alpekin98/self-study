@@ -40,22 +40,22 @@ describe("Kulak Project Mainpage Test", () => {
     browser.executeScript("localStorage.removeItem('stationList');");
   });
 
-  // it("Checks station quantity", () => {
-  //   homepage.getUrl(localUrl);
-  //   let length = 10;
-  //   let i = 0;
-  //   for (i = 0; i < length; i++) {
-  //     homepage.setName("Istanbul Base Station #" + i);
-  //     homepage.setLocation("Ankara");
-  //     homepage.setStatus();
-  //     homepage.clickAddButton();
-  //   }
-  //   expect(homepage.getStationCount()).toBe(length);
-  //   for (i = 0; i < length; i++) {
-  //     homepage.clickDeleteButton(0);
-  //     expect(homepage.getStationCount()).toBe(length - i - 1);
-  //   }
-  // });
+  it("Checks station quantity", () => {
+    homepage.getUrl(localUrl);
+    let length = 10;
+    let i = 0;
+    for (i = 0; i < length; i++) {
+      homepage.setName("Istanbul Base Station #" + i);
+      homepage.setLocation("Ankara");
+      homepage.setStatus();
+      homepage.clickAddButton();
+    }
+    expect(homepage.getStationCount()).toBe(length);
+    for (i = 0; i < length; i++) {
+      homepage.clickDeleteButton(0);
+      expect(homepage.getStationCount()).toBe(length - i - 1);
+    }
+  });
 
   it("Checks if form button enabled", () => {
     homepage.getUrl(localUrl);
