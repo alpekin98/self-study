@@ -14,7 +14,11 @@ exports.config = {
     browserName: "chrome",
     chromeOptions: {
       binary: process.env.CHROME_BIN,
-      args: ["--no-sandbox", "--disable-dev-shm-usage"],
+      args: [
+        "--no-sandbox",
+        "--disable-dev-shm-usage",
+        "--remote-debugging-port=9222",
+      ],
     },
   },
 
