@@ -31,15 +31,11 @@ pipeline {
         // sh 'ln -s /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs/lib/node_modules/chromedriver /usr/bin/chromedriver'
       }
     }
-    stage('Test') {
-      parallel {
-        stage('Static code analysis') {
-          steps { sh 'ng e2e' }
-        }
-        stage('Unit tests') {
-          steps { sh 'ng test self-study --watch=false' }
-        }
-      }
+    stage('Unit tests') {
+      steps { sh 'ng test self-study --watch=false' }
+    }
+    stage('e2e tests') {
+      steps { sh 'ng e2e' }
     }
     stage('Build') {
       steps { sh 'npm run build' }
