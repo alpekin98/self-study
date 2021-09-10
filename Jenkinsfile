@@ -36,12 +36,12 @@ pipeline {
       steps { sh 'ng test self-study --watch=false' }
     }
     
-    try{
-      stage('e2e tests') {
+    stage('e2e tests') {
+      try{
         steps { sh 'ng e2e' }
+      } catch (error) {
+        echo 'Error occured at e2e testing: ' + error.getMessage()
       }
-    } catch (error) {
-      echo 'Error occured at e2e testing: ' + error.getMessage()
     }
     
     stage('Build') {
