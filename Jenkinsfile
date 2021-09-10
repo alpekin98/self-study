@@ -8,6 +8,7 @@ pipeline {
         sh 'npm i -g chromedriver'
         sh 'npm i -g @angular/cli'
         sh 'npm i -g protractor'
+        sh 'npm i -g allure-commandline'
         sh "echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' >>   /etc/apt/sources.list"
         sh 'apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 78BD65473CB3BD13'
         sh 'apt-get update'
@@ -33,7 +34,7 @@ pipeline {
     stage('Test') {
       parallel {
         stage('Static code analysis') {
-          steps { sh 'protractor protractor.conf.js' }
+          steps { sh 'ng e2e' }
         }
         stage('Unit tests') {
           steps { sh 'ng test self-study --watch=false' }
