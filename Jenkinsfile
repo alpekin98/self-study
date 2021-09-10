@@ -40,7 +40,7 @@ pipeline {
       //   }
       // }
       steps { 
-        sh 'ng test' 
+        sh 'ng test self-study --watch=false' 
         sh 'ng e2e' 
       }
 
