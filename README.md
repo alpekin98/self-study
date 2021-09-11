@@ -12,7 +12,7 @@ Terminali açın ve istediğiniz bir dizine gidin.
 ```
 git clone https://github.com/alpekin98/self-study.git
 cd self-study
-docker-compose.yml
+docker-compose up
 ```
 
 Docker-compose bütün gerekli ayarlamaları yapıcaktır.
