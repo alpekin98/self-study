@@ -59,4 +59,4 @@ ile unit test yapabilirsiniz.
 ng e2e
 ```
 
-ile functional test yapabilirsiniz.
+ile end to end testleri yapabilirsiniz.
